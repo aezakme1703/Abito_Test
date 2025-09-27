@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn{
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.btn__outline{
+    background-color: transparent;
+}
+.btn__primary{
+    background-color: #256EEB;
+    color: white;
+}
+.container{
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header__logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header__logo span{
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 6px;
+}
+.header__burger{
+    width: 30px;
+    height: 19px;
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 930px;
+    }
+}
+@media (max-width: 991px){
+    .container{
+        max-width: 730px;
+    }
+}
+@media (max-width: 786px) {
+    .container{
+        max-width: 100%;
+    }
+    .header__burger{
+        display: block;
+    }
+    .header__controls{
+        display: none;
+    } 
+}
+
